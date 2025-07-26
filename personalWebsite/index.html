@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Min Park - Computer Science Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#resume" class="nav-link">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        <img src="profile-picture.jpg" alt="Young Min Park" id="profile-img">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting"></span>
+                        <span class="name"></span>
+                    </h1>
+                    <div class="contact-info">
+                        <p class="email"><a href="mailto:youngmin25@icloud.com">youngmin25@icloud.com</a></p>
+                        <p class="phone"><a href="tel:+15105574725">510-557-4725</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/youngminpark14" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/youngminpark14/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/_youngminn" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#resume" class="scroll-link">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+        <div class="resume-container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-item">
+                    <h3>Education</h3>
+                    <div class="resume-entry">
+                        <h4>San Diego State University</h4>
+                        <p class="resume-subtitle"><em>Bachelor of Science in Computer Science, Minor in Mathematics</em></p>
+                        <p class="resume-date">Expected Graduation: 2026</p>
+                    </div>
+                </div>
+
+                <div class="resume-viewer">
+                    <h3>Resume</h3>
+                    <div class="pdf-container">
+                        <embed src="resume.pdf" type="application/pdf" width="100%" height="800px">
+                        <p class="pdf-fallback">Your browser does not support PDFs. <a href="resume.pdf" target="_blank">Download the PDF</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Young Min Park. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
