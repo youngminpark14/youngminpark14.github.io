@@ -220,13 +220,21 @@ body {
     color: #888888;
 }
 
-.resume-section {
-    min-height: 100vh;
+.resume-section,
+.research-section {
     padding: 6rem 2rem 4rem;
+}
+
+.resume-section {
     background-color: #111111;
 }
 
-.resume-container {
+.research-section {
+    background-color: #0a0a0a;
+}
+
+.resume-container,
+.research-container {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -241,13 +249,15 @@ body {
     animation: fadeInUp 1s ease forwards;
 }
 
-.resume-content {
+.resume-content,
+.research-content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
-.resume-item {
+.resume-item,
+.research-item {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease forwards;
@@ -255,9 +265,9 @@ body {
 
 .resume-item:nth-child(1) { animation-delay: 0.2s; }
 .resume-item:nth-child(2) { animation-delay: 0.4s; }
-.resume-item:nth-child(3) { animation-delay: 0.6s; }
 
-.resume-item h3 {
+.resume-item h3,
+.research-item h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -266,19 +276,26 @@ body {
     padding-bottom: 0.5rem;
 }
 
-.resume-entry {
-    padding: 1rem 0;
+.resume-entry,
+.research-entry {
+    padding: 0.5rem 0;
 }
 
-.resume-entry h4 {
+.resume-entry h4,
+.research-entry h4 {
+    font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
 }
 
-.resume-subtitle {
+.resume-subtitle,
+.research-subtitle {
+    font-family: 'Nunito', sans-serif;
     color: #888888;
-    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
 }
 
 .resume-date {
@@ -286,15 +303,11 @@ body {
     font-size: 0.9rem;
 }
 
-.resume-viewer {
+.resume-viewer,
+.research-viewer {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1s ease forwards;
-    margin-top: 2rem;
-}
-
-.resume-viewer:nth-child(2) { 
-    animation-delay: 0.4s; 
+    animation: fadeInUp 1s ease 0.4s forwards;
 }
 
 .pdf-container {
@@ -302,7 +315,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     background-color: #111111;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .pdf-container embed {
@@ -380,44 +393,49 @@ body {
     .nav-container {
         padding: 0 1rem;
     }
-    
+
     .nav-menu {
         gap: 1rem;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .greeting {
         font-size: 1.2rem;
     }
-    
+
     .contact-info {
         font-size: 0.9rem;
     }
-    
+
     .profile-image {
         width: 150px;
         height: 150px;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
-    .resume-section {
+
+    .resume-section,
+    .research-section {
         padding: 4rem 1rem 2rem;
     }
-    
+
+    .research-entry h4 {
+        font-size: 1.05rem;
+    }
+
     .social-links {
         gap: 1rem;
     }
-    
+
     .social-link {
         font-size: 1.2rem;
     }
-    
+
     .pdf-container embed {
         height: 600px;
     }
